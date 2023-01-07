@@ -6,7 +6,7 @@ static int partition(T arr[], int idx_start, int idx_end)
 {
 	srand(time(NULL));//automatic randomization
 	int idx_pivot = idx_start + rand() % (idx_end-idx_start+1);//randomiation of pivot element
-	int pivot = arr[idx_pivot];
+	T pivot = arr[idx_pivot];
 
 	int counter = 0;
 	for (int i = idx_start; i <= idx_end; ++i)
