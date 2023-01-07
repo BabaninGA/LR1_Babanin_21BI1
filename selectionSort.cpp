@@ -4,7 +4,7 @@ template <typename T>
 void selectionSort(T arr[], int arrSize) {
 	for (int i = 0; i < arrSize - 1; i++) {//the current index which will be filled with the right element
 		int cur_min_idx = i;
-		int cur_min = arr[i];
+		T cur_min = arr[i];
 		for (int j = i + 1; j < arrSize; j++) {//finding the index of element which will be swapped with the element with the current index
 			if (arr[j] < cur_min) {
 				cur_min_idx = j;
